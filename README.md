@@ -1,7 +1,5 @@
 # Shardeum-Atomium-Incentivized-Testnet
 
-<h1 align="center">Shardeum Atomium
-
 ![image](https://shardeum.nyc3.cdn.digitaloceanspaces.com/shardeum/2024/06/ShArcade-Launch-4.png)
 
 ## System requirements:
