@@ -55,12 +55,12 @@ docker --version
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 
-## Setup permissions for docker-compose:
+### Setup permissions for docker-compose:
 ```
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-## Check that docker-compose is working with (should return version 1.29.2 or higher):
+### Check that docker-compose is working with (should return version 1.29.2 or higher):
 ```
 docker-compose --version
 ```
