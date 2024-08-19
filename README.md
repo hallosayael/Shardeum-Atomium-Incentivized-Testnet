@@ -83,75 +83,54 @@ curl -O https://raw.githubusercontent.com/shardeum/validator-dashboard/main/inst
 https://YourIP:8080/
 ```
 
-Enter the password you set during the installation process.
-
+### Enter the password you set during the installation process.
 <img width="1440" alt="Ekran Resmi 2023-02-02 19 12 16" src="https://docs.shardeum.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FloginPage.9d8b33aa.jpg&w=828&q=75">
-  
-<img width="1440" alt="Ekran Resmi 2023-02-02 19 13 12" src="https://user-images.githubusercontent.com/101462877/216379370-a8568c65-85ca-477a-a8e1-2a4e3f2c424f.png">
 
-![image](https://user-images.githubusercontent.com/101462877/216380082-8c616ccd-8f60-4ec4-9324-ff1097c20eba.png)
+### You should now see the “Overview” page for the Shardeum Validator Dashboard in your web browser:
+<img width="1440" alt="Ekran Resmi 2023-02-02 19 13 12" src="https://docs.shardeum.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FoverviewBetanet.1ca6b780.jpg&w=828&q=75">
 
-# After seeing an output like the image below, continue...
+# Start validator
+### Go to the “Maintenance” page, then click the “Start Node” button in the top left white box:
+<img width="1440" alt="Ekran Resmi 2023-02-02 19 13 12" src="https://docs.shardeum.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FstartBetanet.27c91085.jpg&w=828&q=75">
 
-![image](https://user-images.githubusercontent.com/101462877/216381866-e840b39c-1e87-4403-a0d2-32289e206ad4.png)
-
-```bash
+### if that does not work, you can also try running the following command on cli:
+```
 $HOME/.shardeum/shell.sh
 ```
 
-```bash
-operator-cli gui start
 ```
-
-
-# Open any browser on your computer.
-
-## In the search bar, type https://YOUR_IP:8080. IF NOT SECURE, WE SAY ADVANCED, PROCEED TO THE SITE.
-
-<img width="578" alt="Ekran Resmi 2023-02-02 19 27 01" src="https://user-images.githubusercontent.com/101462877/216383216-0c28fabd-ba14-41a5-b886-dd87f775911e.png">
-
-  
- 
-## Enter the password we set above.
-
-<img width="1440" alt="Ekran Resmi 2023-02-02 19 28 13" src="https://user-images.githubusercontent.com/101462877/216383365-30973dbc-43a5-48cb-a916-6c1a013d4aec.png">
-  
- 
-## Go to `Maintenance` and click `start node`.
-  
-<img width="1440" alt="Ekran Resmi 2023-02-02 22 36 51" src="https://user-images.githubusercontent.com/101462877/216432476-13ee3ec7-9381-4bf2-acb1-09baa8d75ad6.png">
-
-  
-## Refresh and wait a while
-  
-
-<img width="1440" alt="Ekran Resmi 2023-02-02 22 36 51" src="https://user-images.githubusercontent.com/101462877/216432965-714c474d-a742-4032-b6ca-bea7972962e1.png">
-  
-  
-## Get Faucet Here: <a href="https://chaindrop.org/?chainid=8082&token=0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee" target="_blank">Faucet</a> 
-  
-  ![image](https://user-images.githubusercontent.com/101462877/216433395-0940fe21-6806-4a62-8d71-8b42330341ff.png)
-
-
-## Stake.
-  
-  <img width="1440" alt="Ekran Resmi 2023-02-02 22 43 18" src="https://user-images.githubusercontent.com/101462877/216433614-73f58204-608f-419e-9901-7eb80590a577.png">
-
-
- ## Go back to the terminal and enter the following command.
-
-```bash
 operator-cli start
 ```
-  
 
-# You can view the status with the following command.
-  
+# Monitor validator
+### Go to “Performance” to see your node’s hardware performance here:
+<img width="1440" alt="Ekran Resmi 2023-02-02 19 13 12" src="https://docs.shardeum.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FperformanceBetanet.2cfbaad5.jpg&w=828&q=75">
 
-```bash
-pm2 list
+### For more details about your node status run the following inside the CLI:
 ```
-  
-  ![image](https://user-images.githubusercontent.com/101462877/216434539-6bcf7343-fcb3-423a-a7ee-d1cb8f1dde68.png)
+operator-cli status
+```
 
-# Thanks to: agus1224 !!!
+# Connect Wallet to Shardeum Testnet
+### Connect to Shardeum Validator with your wallet by configuring the network Shardeum Atomium
+
+# Get SHM from ITN Faucet
+### Claim testnet tokens from Shardeum Discord SHM Faucet.
+  
+# Stake SHM to validator
+## GUI
+### After you start the validator, go to the “Settings” page. You will be asked to connect your wallet:
+<img width="1440" alt="Ekran Resmi 2023-02-02 22 36 51" src="https://docs.shardeum.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FconnectWalletBetanet.91738aaf.jpg&w=828&q=75">
+  
+### After you connect your wallet, you should see the following:
+<img width="1440" alt="Ekran Resmi 2023-02-02 22 36 51" src="https://docs.shardeum.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FconnectedWalletOptions.3344a2b6.jpg&w=828&q=75">
+   
+### When you click "Add Stake", you will see the following:
+<img width="1440" alt="Ekran Resmi 2023-02-02 22 36 51" src="https://docs.shardeum.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FconnectedWalletAddStake.f4614c14.jpg&w=828&q=75">
+
+# DONE
+
+# Uninstall Validator
+```
+rm -rf .shardeum
+```
