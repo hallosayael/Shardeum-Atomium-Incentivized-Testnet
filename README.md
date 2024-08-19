@@ -65,10 +65,27 @@ sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 ```
 
+# Download and Install Validator
+### Run the following command:
+```
+curl -O https://raw.githubusercontent.com/shardeum/validator-dashboard/main/installer.sh && chmod +x installer.sh && ./installer.sh
+```
+### The terminal will ask questions about your setup settings.
+### Enter y to setup the web based dashboard
+### Set a password for dashboard access
+### Imput your IP address (vps)
+### Make sure your vps port 8080, 9001, 10001 is available
+# Wait for the installation process to complete
 
-## In order, say `y`, set a password, enter `8080` when it asks for port, press Enter directly when it asks for base directory so that it saves to `.shardeum`.
+# Open validator GUI
+### Go to your web browser and go to:
+```
+https://YourIP:8080/
+```
 
-<img width="1440" alt="Ekran Resmi 2023-02-02 19 12 16" src="https://user-images.githubusercontent.com/101462877/216379061-943482d3-1f8e-4d11-9241-8a39be09065b.png">
+Enter the password you set during the installation process.
+
+<img width="1440" alt="Ekran Resmi 2023-02-02 19 12 16" src="https://docs.shardeum.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FloginPage.9d8b33aa.jpg&w=828&q=75">
   
 <img width="1440" alt="Ekran Resmi 2023-02-02 19 13 12" src="https://user-images.githubusercontent.com/101462877/216379370-a8568c65-85ca-477a-a8e1-2a4e3f2c424f.png">
 
