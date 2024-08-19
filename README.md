@@ -3,7 +3,7 @@
 ![image](https://shardeum.nyc3.cdn.digitaloceanspaces.com/shardeum/2024/06/ShArcade-Launch-4.png)
 
 ## System requirements:
-NODE TIPE | CPU     | RAM      | SSD     |
+VALIDATOR TIPE | CPU     | RAM      | SSD     |
 | ------------- | ------------- | ------------- | -------- |
 | Testnet | 2-4          | 4-16         | 250  |
 
@@ -17,7 +17,7 @@ NODE TIPE | CPU     | RAM      | SSD     |
 
 
 
-# Seting Up
+# Install package managers
 
 ```
 sudo apt update && sudo apt upgrade -y
@@ -26,20 +26,45 @@ sudo apt update && sudo apt upgrade -y
 ```
 sudo apt-get install curl
 ```
+
+# Update package managers
+
 ```
-sudo apt install docker.io -y
+sudo apt update
 ```
 
-```bash
+# Install docker and docker.io
+
+```
+sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
+```
+
+```
+sudo systemctl status docker
+```
+
+# Check that docker is working with (should return version 20.10.12 or higher):
+
+```
+docker --version
+```
+
+# Install docker-compose
+
+```
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+
+Setup permissions for docker-compose:
+```
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-# Shardeum Validator setup.
-
-```bash
-curl -O https://gitlab.com/shardeum/validator/dashboard/-/raw/main/installer.sh && chmod +x installer.sh && ./installer.sh
+Check that docker-compose is working with (should return version 1.29.2 or higher):
 ```
+docker-compose --version
+```
+
 
 ## In order, say `y`, set a password, enter `8080` when it asks for port, press Enter directly when it asks for base directory so that it saves to `.shardeum`.
 
