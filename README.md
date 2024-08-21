@@ -73,7 +73,7 @@ curl -O https://raw.githubusercontent.com/shardeum/validator-dashboard/main/inst
 ### The terminal will ask questions about your setup settings.
 ### Enter y to setup the web based dashboard
 ### Set a password for dashboard access
-### Imput your IP address (vps)
+### Input your IP address (vps)
 ### Make sure your vps port 8080, 9001, 10001 is available
 # Wait for the installation process to complete
 
